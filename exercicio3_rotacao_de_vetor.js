@@ -1,7 +1,7 @@
 /////VARIÁVEIS
 
 let vetorAlfabeto = ["A", "B", "C", "D", "E"];
-let quantidadeDeRotacoes = 2;
+let quantidadeDeRotacoes = 1;
 
 /////CHAMANDO FUNÇÕES
 
@@ -12,7 +12,7 @@ rotacao(vetorAlfabeto, quantidadeDeRotacoes);
 function rotacao(vetor,quantidadeDeRotacoes) {
     if (vetor != "") {
         for (i=0; i < quantidadeDeRotacoes; i++) {
-            vetor.unshift(vetor[4]);
+            vetor.unshift(vetor[vetor.length - 1]);
             vetor.pop();
         }
     } else {
